@@ -21,24 +21,24 @@ function Home({data}) {
       </Head>
 
       <main>
-        <section className="header-clipping pt-10">
+        <section className="header-clipping pt-10 min-h-screen md:min-h-0">
             <Circle className="absolute left-0 bottom-0"></Circle>
             {/* <div className="sunshine"></div> */}
-            <div className="container mx-auto">
+            <div className="container mx-auto px-4">
               <Header onLight></Header>
               <Hero></Hero>
             </div>
         </section>
-        <section className="container mx-auto pt-24">
+        <section className="container px-4 mx-auto md:pt-24">
           <Clients></Clients>
         </section>
-        <section className="container mx-auto pt-24">
+        <section className="container px-4 mx-auto md:pt-24">md:
            <ListCourse data={data}></ListCourse>
         </section>
-        <section className="container mx-auto pt-24">
+        <section className="container px-4 mx-auto md:pt-24">
             <ListCategories></ListCategories>
         </section>
-        <section className="mt-24 bg-purple-900 py-12">
+        <section className="mt-24 px-4 bg-purple-900 py-12">
             <Footer></Footer>
         </section>
       </main>

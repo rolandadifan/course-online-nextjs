@@ -7,25 +7,25 @@ export default function Hero() {
     }
     return (
         <div className="flex justify-between items-center">
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2 mt-8 md:mt-0">
                 <h1 className="text-5xl text-white mb-5 font-semibold">
                     <span className="text-teal-400">
-                        The New </span>Way To <br/> Achieve Good <span className="text-teal-400">  Skills
+                        The New </span>Way To <br className="hidden md:block"/> Achieve Good <span className="text-teal-400">  Skills
                     </span>
                 </h1>
                 <p className="text-white text-lg mb-8">We provide tons of pathskill that you
-                     <br/> can choose and focus on
+                     <br className="hidden md:block"/> can choose and focus on
                 </p>
-                <form onSubmit={submit}>
-                    <input type="text"
-                     className="bg-white focus:outline-none border-0 px-6 py-3 w-1/2"
+                <form onSubmit={submit} className="flex">
+                    <input type="email"
+                     className="bg-white focus:outline-none border-0 md:px-6 w-full px-4 py-3 md:w-1/2"
                      placeholder="your email address"
                       onChange={(event) => setstate(event.target.value)}
                      value={state}/>
-                    <button className="bg-orange-500 hover:bg-orange-400 transition-all duration-200 focus:outline-none shadow-inner text-white px-6 py-3">Daftar Now</button>
+                    <button className="bg-orange-500 hover:bg-orange-400 transition-all duration-200 focus:outline-none shadow-inner text-white px-4 md:px-6 whitespace-nowrap py-3">Daftar Now</button>
                 </form>
             </div>
-            <div className="w-1/2 flex justify-end pt-24 pr-16">
+            <div className="hidden w-1/2 md:flex justify-end pt-24 pr-16">
                 <div className="relative" style={{ width: 369, height:440 }}>
                     <div className="absolute border-indigo-700 border-2 -mt-12 -mr-6 right-0" style={{ width: 324, height: 374 }}></div>
                     <div className="absolute w-full h-full -mb-8 -ml-8">
